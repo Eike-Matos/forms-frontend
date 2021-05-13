@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" type="text/css" href="portal.css" media="screen">
+    
+    <title>Portal EDE</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="titulo"> Portal EDE</h1>
+        <p id="subtitulo">Entre com seus dados</p>
+        <br>
+    </div>
+
+    <form>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Login</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Senha</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>         
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Qual sua área de atuação?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>GPM
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Projetos
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">TI
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select id="senioridade" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+    <fieldset class="grupo">
+        <div id="check">
+            <label><strong>Qual visibilidade você deseja consultar:</strong></label><br><br>
+            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="ANDON">
+            <label for="tecnologia1">ANDON</label>
+            <input type="checkbox" id="tecnologia2" name="tecnologia2" value="BDS">
+            <label for="tecnologia2">BDS</label>
+            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="CNQ">
+            <label for="tecnologia3">CNQ</label>
+            <input type="checkbox" id="tecnologia4" name="tecnologia4" value="OPS">
+            <label for="tecnologia4">OPS</label>
+            <input type="checkbox" id="tecnologia5" name="tecnologia5" value="PRS">
+            <label for="tecnologia5">PRS</label>
+            <input type="checkbox" id="tecnologia6" name="tecnologia6" value="QMS">
+            <label for="tecnologia6">QMS</label>
+            <input type="checkbox" id="tecnologia7" name="tecnologia7" value="RECURSOS TRY-OUT">
+            <label for="tecnologia7">RECURSOS TRY-OUT</label> 
+            <input type="checkbox" id="tecnologia8" name="tecnologia8" value="RIS">
+            <label for="tecnologia7">RIS</label> 
+
+        </div>
+    </fieldset>
+    <div class ="campo">
+        <br>
+        <label><strong>CAMPO PARA PREENCHIMENTO ADICIONAL:</strong></label>
+        <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+    </div>
+
+    <button class="botao" type="submit">Concluído</button>
+
+    </form>
+    
+ </body>
+
+</html>
